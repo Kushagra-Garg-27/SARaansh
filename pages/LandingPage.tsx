@@ -21,7 +21,12 @@ const useIntersectionObserver = (options = {}) => {
   return [ref, isIntersecting] as const;
 };
 
-const Reveal = ({ children, delay = 0 }: { children: React.ReactNode, delay?: number }) => {
+interface RevealProps {
+  children: React.ReactNode;
+  delay?: number;
+}
+
+const Reveal: React.FC<RevealProps> = ({ children, delay = 0 }) => {
   const [ref, isVisible] = useIntersectionObserver();
   return (
     <div 
