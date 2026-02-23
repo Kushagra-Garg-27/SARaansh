@@ -14,7 +14,7 @@ class DashboardService:
             # For this MVP schema, we assume risk is stored on customer or passed through
             cursor.execute(
                 """
-                SELECT COUNT(*) 
+                SELECT COUNT(*)
                 FROM sar_cases c
                 JOIN customers cust ON c.customer_id = cust.id
                 WHERE cust.risk_level = 'High' AND c.status != 'Filed'

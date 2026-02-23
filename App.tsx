@@ -13,7 +13,7 @@ export default function App() {
   // Handle the cinematic transition sequence
   const handleEnterPlatform = () => {
     setViewState('transitioning');
-    
+
     // Duration matches the fade-out animation + slight buffer
     setTimeout(() => {
       setViewState('dashboard');

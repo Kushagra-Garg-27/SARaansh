@@ -40,7 +40,7 @@ class CaseService:
             JOIN customers cust ON c.customer_id = cust.id
             WHERE c.id = %s
         """
-        
+
         # 2. Fetch Transactions
         tx_query = """
             SELECT id, timestamp, amount, type, counterparty, flagged

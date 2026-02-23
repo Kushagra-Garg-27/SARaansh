@@ -8,7 +8,7 @@ class ReportService:
     def generate_sar_report(case_id: str) -> SARReport:
         # Fetch data source
         case_data = CaseService.get_case_detail(case_id)
-        
+
         # Calculate aggregates for narrative
         total_flow = sum(t.amount for t in case_data.transactions)
         flagged_txs = [t for t in case_data.transactions if t.flagged]

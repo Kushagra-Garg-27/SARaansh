@@ -16,7 +16,7 @@ export const CasesList: React.FC<{ onNavigate: (page: string) => void }> = ({ on
             <Plus size={16} /> New Investigation
           </button>
         </div>
-        
+
         <div className="flex gap-4">
           <div className="relative flex-1 max-w-md group">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400 transition-colors group-focus-within:text-ink-900" size={16} />
