@@ -8,14 +8,14 @@ interface LayoutProps {
   onLogoClick?: () => void;
 }
 
-const NavItem = ({ 
+const NavItem = ({
   icon: Icon, 
   label, 
   active, 
   onClick, 
   collapsed 
 }: { 
-  icon: any, 
+  icon: unknown, 
   label: string, 
   active: boolean, 
   onClick: () => void, 

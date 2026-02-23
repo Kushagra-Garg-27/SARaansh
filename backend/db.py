@@ -32,7 +32,7 @@ class Database:
     def get_cursor(cls):
         if cls._connection_pool is None:
             cls.initialize()
-        
+
         conn = cls._connection_pool.getconn()
         try:
             with conn.cursor() as cursor:

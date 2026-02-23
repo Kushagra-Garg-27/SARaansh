@@ -31,7 +31,7 @@ export const AuditLog: React.FC = () => {
                </thead>
                <tbody className="divide-y divide-neutral-200">
                  {MOCK_AUDIT_LOG.map((log, index) => (
-                   <tr 
+                   <tr
                       key={log.id} 
                       className="hover:bg-neutral-50 transition-colors group opacity-0 animate-enter"
                       style={{ animationDelay: `${index * 50}ms` }}

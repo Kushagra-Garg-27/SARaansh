@@ -2,8 +2,8 @@ import React from 'react';
 import { MOCK_CASES } from '../data/mockData';
 import { ArrowUpRight, CheckCircle, Clock, AlertTriangle, TrendingUp, Activity } from 'lucide-react';
 
-const StatCard = ({ label, value, icon: Icon, trend, delay }: any) => (
-  <div 
+const StatCard = ({ label, value, icon: Icon, trend, delay }: unknown) => (
+  <div
     className="bg-white p-6 border border-neutral-200 hover:border-ink-900 transition-all duration-300 opacity-0 animate-enter hover:-translate-y-1 hover:shadow-paper"
     style={{ animationDelay: delay }}
   >

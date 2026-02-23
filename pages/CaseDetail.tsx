@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MOCK_CASES, MOCK_TRANSACTIONS } from '../data/mockData';
 import { RiskBadge, StatusBadge } from '../components/Badge';
-import { 
+import {
   CheckCircle, AlertTriangle, Play, FileText, Search, 
   ArrowRight, RefreshCw, Shield, ChevronDown, ChevronRight, Lock, History, X, Sparkles, FileCheck, CornerDownRight
 } from 'lucide-react';
